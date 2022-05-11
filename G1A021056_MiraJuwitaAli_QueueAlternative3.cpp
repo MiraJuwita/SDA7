@@ -29,12 +29,12 @@ Algoritma
 	else  if ( Q.head = -1 and Q.Tail = -1 ) then         				 // Queue kosong 
 			Q.head <- Q.head + 1
 			Q.tail <- Q.tail + 1
-			if ( Q.tail = NMax-1 ) then									// Kondisi khusus, tail sudah di ujung kanan dan tidak penuh 
+			if ( Q.tail = NMax-1 ) then					 // Kondisi khusus, tail sudah di ujung kanan dan tidak penuh 
 				Q.tail <- 0
-			else		     											// Kondisi biasa 
+			else		     						 // Kondisi biasa 
 				Q.tail <- Q.tail + 1
 			{end if}
-		Q.info[Q.tail] <- p      										// data di-tambahkan di posisi tail 
+		Q.info[Q.tail] <- p      						 // data di-tambahkan di posisi tail 
 	{end if}      
        
 // Delete 
@@ -45,15 +45,15 @@ Procedure DeQueueAlt3(input/output Q:queue)
   FS. Queue di-dequeue dengan Alternative 3}
 Kamus 
 Algoritma
-	if ( Q.head = -1 and Q.Tail = -1 ) then         	      // Queue kosong
+	if ( Q.head = -1 and Q.Tail = -1 ) then              // Queue kosong
 		  output('Stack kosong')
 	else
-      if Q.Tail = Q.Head then     							 // data cuman 1 elemenm berada dimanapun 
+      if Q.Tail = Q.Head then     			     // data cuman 1 elemenm berada dimanapun 
           Q.head <- -1
           Q.tail <- -1
       else if ( Q.Head <- nMax-1 and Q.tail <> Q.head ) then // Kondisi khusus, head ada di ujung kanan dan tidak penuh 
                Q.head <- 0 
-      else     												 // Kondisi biasa 
+      else     						     // Kondisi biasa 
           Q.head <- Q.head + 1
       {end if}
 	{end if}
