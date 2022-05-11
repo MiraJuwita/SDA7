@@ -39,7 +39,7 @@ Algoritma
        
 // Delete 
 // menghapus elemen dengan cara menggeser semua elemen list ke depan dan 
-// mengurangi tail dengan 1 pergeseran dengan looping 
+// mengurangi tail dengan 1 pergeseran dengan looping.
 Procedure DeQueueAlt3(input/output Q:queue)
 { IS. Queue mungkin kosong atau penuh
   FS. Queue di-dequeue dengan Alternative 3}
