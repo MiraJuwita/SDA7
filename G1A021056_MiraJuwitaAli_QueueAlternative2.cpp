@@ -14,7 +14,7 @@ Alghoritma
 Function IsFullAlt2( Q:Queue ) ? boolean 
 Kamus 
 Algoritma 
-    ? ( Q.head = 0 and Q.tail = NMax-1 )
+    -> ( Q.head = 0 and Q.tail = NMax-1 )
     
 // Add
 // penambahan elemen selalu menggerakkan variabel tail 
